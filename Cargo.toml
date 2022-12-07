@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "challenges/*",
+    "crates/*",
+]
+
+[workspace.dependencies]
+util = { path = "./crates/util" }

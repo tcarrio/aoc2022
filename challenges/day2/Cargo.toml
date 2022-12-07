@@ -1,0 +1,21 @@
+[package]
+name = "day2"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+util = { path = "../../crates/util" }
+
+[lib]
+name = "day2"           # The name of the target.
+path = "src/lib/mod.rs" # The source file of the target.
+
+[[bin]]
+name = "part1"
+path = "src/bin/part1.rs"
+
+[[bin]]
+name = "part2"
+path = "src/bin/part2.rs"
