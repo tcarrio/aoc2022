@@ -1,11 +1,11 @@
-use std::io::Result;
+use std::result::Result;
 
 use crate::input_parser;
 
 const EOF_STR: &str = "EOF";
 
 #[derive(Clone)]
-pub struct Cli<F: Clone + FnOnce(Vec<String>) -> Result<()>> {
+pub struct Cli<F: Clone + FnOnce(Vec<String>) -> Result<(), String>> {
     name: String,
     filepath: Option<String>,
     func: F,
@@ -13,9 +13,9 @@ pub struct Cli<F: Clone + FnOnce(Vec<String>) -> Result<()>> {
 
 impl<F> Cli<F>
 where
-    F: Clone + FnOnce(Vec<String>) -> Result<()>,
+    F: Clone + FnOnce(Vec<String>) -> Result<(), String>,
 {
-    pub fn run(&self) -> Result<()> {
+    pub fn run(&self) -> Result<(), String> {
         println!("Executing function '{}'", self.name);
 
         let lines = match &self.filepath {
@@ -27,7 +27,7 @@ where
             println!("An unexpected error occurred reading input");
             println!("{}", msg);
 
-            return Ok(());
+            return Err(msg);
         }
 
         let func = self.func.clone();
