@@ -23,3 +23,7 @@ So the overall execution of the test input for day 2 part 1 would be done with:
 ```shell
 cat ./challenges/day2/input.txt | cargo run -p day2 -b part1
 ```
+
+## Completion
+
+I'll fill out a table for the challenge completion eventually
