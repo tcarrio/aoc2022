@@ -3,7 +3,7 @@ use day2::strategy::Strategy;
 use std::io;
 
 fn main() -> io::Result<()> {
-    let input = parse_input_to_strings();
+    let input = parse_input_to_strings(Some("EOF"));
 
     let total_score = input
         .iter()
