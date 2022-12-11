@@ -6,9 +6,9 @@ Advent of Code 2022: Rusty edition
 
 The repository utilizes **cargo workspaces** in order to reuse certain functionality across challenges.
 
-You can find all of the challenges under the [challenges][./challenges] folder.
+You can find all of the challenges under the [challenges](./challenges) folder.
 
-Miscellanious crates can be found under the [crates][./crates] folder.
+Miscellanious crates can be found under the [crates](./crates) folder.
 
 You can execute a specific package and binary with cargo easily with:
 
