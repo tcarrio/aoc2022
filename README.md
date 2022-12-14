@@ -26,4 +26,32 @@ cat ./challenges/day2/input.txt | cargo run -p day2 --bin part1
 
 ## Completion
 
-I'll fill out a table for the challenge completion eventually
+I'll try to keep this as updated, but we'll see.
+
+|Day|Part 1|Part2|
+|---|------|-----|
+|  1|  ✔️   |     |
+|  2|  ✔️   |     |
+|  3|      |     |
+|  4|      |     |
+|  5|      |     |
+|  6|      |     |
+|  7|      |     |
+|  8|      |     |
+|  9|      |     |
+| 10|      |     |
+| 11|      |     |
+| 12|      |     |
+| 13|      |     |
+| 14|      |     |
+| 15|      |     |
+| 16|      |     |
+| 17|      |     |
+| 18|      |     |
+| 19|      |     |
+| 20|      |     |
+| 21|      |     |
+| 22|      |     |
+| 23|      |     |
+| 24|      |     |
+| 25|      |     |
